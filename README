@@ -1,0 +1,49 @@
+Analyzing satellite images of Venus using machine learning.
+
+The project consists of python scripts, with entry point is main.py.
+The program requires python3 environment and Nvidia CUDA support to train the neural networks.
+
+Dependencies:
+
+scikit-learn 0.23.0
+matplotlib 3.2.1
+tensorflow 2.2.0
+numpy 1.18.4
+seaborn 0.10.1
+
+all of which can be pip installed.
+
+To start the program and see run:
+python3 main.py
+
+To see help run:
+python3 main.py -h
+
+Project structure:
+
+project_root_folder/
+    data/
+        volcanoes_test
+            test_images.csv
+            test_labels.csv
+        volcanoes_train
+            train_images.csv
+            train_labels.csv
+    models/
+        cnn.py
+        cnn_generated_data.py
+        cnn_short.py
+        cnn_voting.py
+        decision_tree.py
+        ensemble.py
+        logistic_regression.py
+        random_tree_forest.py
+       helpers/
+        config.py
+        data_structures.py
+    cnn_analysis.py
+    data_handling.py
+    file_output.py
+    main.py
+    model_comparison.py
+    README.txt
